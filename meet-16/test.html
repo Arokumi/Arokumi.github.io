@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Test Suite</title>
+<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.19.1.css">
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.19.1.js"></script>
+  <script>
+    function add(a, b) {
+      return a + b;
+    }
+    localStorage.setItem("FirstName", "Arhamuzzaky");
+
+    function getName(){
+    let fname = localStorage.getItem("FirstName");
+    return fname;
+    };
+
+    
+      QUnit.test('Get name', function(assert) {
+        assert.equal(getName(), "Arhamuzzaky");
+      });
+    
+  </script>
+</body>
