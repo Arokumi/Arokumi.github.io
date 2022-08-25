@@ -1,0 +1,6 @@
+button, input{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}

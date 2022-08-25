@@ -1,0 +1,69 @@
+<!Doctype html>
+
+<head>
+    <title>
+        Tasks | Portfoliker
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="task.css">
+    <link rel="icon" href="resources/logo.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body id="body">
+    <!-- This will be the header -->
+    <Header class="topnav">
+        <div class="logo"><a href="http://127.0.0.1:5500/portofolio.html"><img src="resources/logo.png" alt="" id="home_button"></a></div>
+        <nav class="navbar">
+            <ul class="header_nav">
+                <li class="nav_text"><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+                <li class="nav_text"><a href="http://127.0.0.1:5500/todo.html">Tasks</a></li>
+                <li class="nav_text"><a href="http://127.0.0.1:5500/blog.html">Blogs</a></li>
+                <li class="nav_text"><a href="http://127.0.0.1:5500/aboutus.html">About</a></li>
+                <li class="nav_text"><a href="http://127.0.0.1:5500/contactus.html">Contact</a></li>
+                <li class="nav_text"><a href="http://127.0.0.1:5500/portofolio.html">Profile</a></li>
+            </ul>
+        </nav>
+    </Header>
+
+    <div id="pagecontent">
+        <div id="header">
+            <h1>Your Tasks</h1><br>
+            <form action="" id="newtaskform">
+                <input type="text" name="taskname" id="newtaskinput" placeholder="Add a task..."><input type="submit" value="Add Task" id="newtasksubmit">
+            </form>
+
+        </div>
+        <main>
+            <section class="tasklist">
+                <h2>Tasks</h2>
+                <div id="tasks">
+                    <div class="task">
+                        <label>
+                            <input type="checkbox" class="checkbox">
+                        </label>
+                        <div class="content">
+                            <input 
+                                type="text"
+                                class="text"
+                                value="My new task"
+                                readonly
+                            />
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>

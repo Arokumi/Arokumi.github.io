@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>lmao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="main.js"></script>
+    <div class="popup " id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <form action="" class="editForm" onsubmit="submitFn()">
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id="username"><br><br>
+    
+                <label for="occupation">Occupation</label><br>
+                <input type="text" name="occupation" id="occupation"><br><br>
+    
+                <label for="description">Description</label><br>
+                <input type="text" name="description" id="description"><br><br>
+    
+                <label for="availability">Availability</label><br>
+                <input type="radio" name="availability" id="availability" value="full"> Full-Time<br>
+                <input type="radio" name="availability" id="availability" value="part"> Part-Time<br><br>
+    
+                <label for="age">Age</label><br>
+                <input type="number" name="age" id="age"><br><br>
+    
+                <label for="location">Location</label><br>
+                <input type="text" name="location" id="location"><br><br>
+    
+                <label for="experience">Experience</label><br>
+                <input type="text" name="experience" id="experience"><br><br>
+    
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email"><br><br>
+    
+                <label for="number">Phone Number</label><br>
+                <input type="number" name="number" id="number"><br><br>
+    
+                <input class="close-btn" type="submit" value="Submit" onclick="submitData(), togglePopup()" class="closeBtn">
+            </form>
+        </div>
+    </div>
+
+    <button onclick="togglePopup()">Show Popup</button>
+</body>

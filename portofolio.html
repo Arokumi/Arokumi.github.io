@@ -1,0 +1,110 @@
+<!Doctype html>
+
+<head>
+    <title>
+        Your Profile | Portfoliker
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="resources/logo.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+</head>
+<body id="body">
+    <!-- This will be the header -->
+    <Header class="topnav">
+        <div class="logo"><a href="http://127.0.0.1:5500/portofolio.html"><img src="resources/logo.png" alt="" id="home_button"></a></div>
+        <nav class="navbar">
+            <ul class="header_nav">
+                <li class="nav_text"><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+                <li class="nav_text"><a href="http://127.0.0.1:5500/todo.html">Tasks</a></li>
+                <li class="nav_text"><a href="http://127.0.0.1:5500/blog.html">Blogs</a></li>
+                <li class="nav_text"><a href="http://127.0.0.1:5500/aboutus.html">About</a></li>
+                <li class="nav_text"><a href="http://127.0.0.1:5500/contactus.html">Contact</a></li>
+                <li class="nav_text"><a href="http://127.0.0.1:5500/portofolio.html">Profile</a></li>
+            </ul>
+        </nav>
+    </Header>
+
+    <div id="content" style="position: relative; top: 120px;"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg m-5" style="background-color: #1F2937;; outline: solid; outline-width: 1px; outline-color: rgb(113, 113, 130) ;border-radius: 20px;">
+                    <div style="text-align:center; margin-top: 2rem; margin-bottom: 1rem; "><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png" alt="" width="40%" height="40%" style="margin: auto;"></div>
+                    <div style="margin: auto; text-align: center; color: #EEE; font-family: 'Montserrat', sans-serif;" id="Pname">Jack Daniels</div>
+                    <div style="margin: auto; text-align: center; color: #EEE; font-family: 'Montserrat', sans-serif;" id="Poccupation">Occupation</div><br>
+                    <div style="margin: auto; text-align: center; color: #EEE; font-family: 'Montserrat', sans-serif;" id="Pdescription">Description</div><br>
+                    <button onclick="toggleEdit()" class="editButton" style="color: #8B5Cf6; margin-left: 11rem; margin-bottom: 2rem;">Edit Profile</button>
+                </div>
+                <div class="col-lg m-5" style="background-color: #1F2937; outline: solid; outline-width: 1px; outline-color: rgb(113, 113, 130);border-radius: 20px;">
+                    <ul style="color: #EEE; margin: 2rem 0 2rem 0;">
+                        <li>Availability: <m id="Pavailability"></m></li><br>
+                        <li>Age: <m id="Page">17</m></li><br>
+                        <li>Location: <m id="Plocation">South Jakarta</m></li><br>
+                        <li>Experience: <m id="Pexperience">2 Months</m></li><br>
+                        <li>Email: <m id="Pemail">scockers@cmail.com</m></li><br>
+                        <li>Number: <m id="Pnumber">62119327810</m></li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <form action="" class="editForm" onsubmit="submitFn()">
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id="username"><br>
+    
+                <label for="occupation">Occupation</label><br>
+                <input type="text" name="occupation" id="occupation"><br>
+    
+                <label for="description">Description</label><br>
+                <input type="text" name="description" id="description"><br>
+    
+                <label for="availability">Availability</label><br>
+                <input type="radio" name="availability" id="availabilityFull" value="full"> Full-Time<br>
+                <input type="radio" name="availability" id="availabilityPart" value="part"> Part-Time<br>
+    
+                <label for="age">Age</label><br>
+                <input type="number" name="age" id="age"><br>
+    
+                <label for="location">Location</label><br>
+                <input type="text" name="location" id="location"><br>
+    
+                <label for="experience">Experience</label><br>
+                <input type="text" name="experience" id="experience"><br>
+    
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email"><br>
+    
+                <label for="number">Phone Number</label><br>
+                <input type="number" name="number" id="number"><br>
+    
+                <input class="close-btn" type="submit" value="Submit" class="closeBtn">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h3>Portfoliker</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quos repudiandae sed ipsa optio, obcaecati neque deserunt unde animi dolor eum expedita in facere quas veniam eaque consectetur officiis. Quia.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+                <p>copyright &copy;2022 Portfoliker. designed by <span>Code Opacity</span></p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
